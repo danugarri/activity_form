@@ -49,7 +49,7 @@
           <option>Comida</option>
           <option>Copas</option>
           <option>Cultura</option>
-          <option>Música</option>
+          <option>Musica</option>
           <option>Viajes</option>
         </select><br/>
         <input type="radio" name="access" />
