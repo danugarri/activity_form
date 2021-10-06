@@ -1,0 +1,62 @@
+body{
+    background-color: burlywood;
+    
+
+}
+h1{
+    text-align: center;
+}
+form{
+    text-align: center;
+    background-color: khaki;
+    border:2px solid grey;
+    border-radius: 5%;
+    width:fit-content;
+    padding:20px;flex-direction: column;
+    margin-top: 40px;
+   
+}
+section{
+    width:100%
+}
+input{
+    margin:5px
+}
+select{
+    margin:5px
+}
+input[type='submit']{
+    background-color: cornflowerblue;
+    cursor:pointer
+}
+input[type='submit']:hover{
+    background-color: coral;
+}
+/*styling for the POST*/
+.container{
+    display:flex;
+    margin:10px 20px;
+    background-color: burlywood;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+main{
+    text-align: center;
+    background-color: rgb(143, 140, 116);
+    border:2px solid rgb(184, 188, 214);
+    border-radius: 5%;
+    width: 50%;
+    padding:20px;
+    font-family: fantasy;
+    flex-direction: column;
+    height:80%
+ 
+}
+main div{
+   background-color: beige ;
+}
+img{
+    height:100px;
+    width:200px
+}
