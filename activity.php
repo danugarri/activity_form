@@ -8,18 +8,17 @@ class Activity
     public $date;
     public $city;
     public $type;
-    public $image;
+   // public $image;
+    public $free;
     //public $access;
     //constrtuctor method, called __construct(parameters)
-    function __construct($title,$date,$city,$type){
+    function __construct($title,$date,$city,$type,$free){
         //asigning values defined in index.php
         $this->title = $title;
         $this->date = $date;
         $this->city = $city;
         $this->type = $type;
-        //$this->image= "<img src='https://www.bioparcvalencia.es/wp-content/uploads/2017/06/ficha-animal-bioparc-valencia-leon.jpg'/>";
-        //$this->access = $access;
-        /* con esto puedo asignarle el valor de la imagen pero necesito mostrar una imagen disitntinta según corresponda*/
+        $this->free= $free;
     }
 }
 
