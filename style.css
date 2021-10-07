@@ -1,5 +1,6 @@
 body{
     background-color: burlywood;
+   
     
 
 }
@@ -16,9 +17,12 @@ form{
     margin-top: 40px;
    
 }
-section{
+/*
+#form-box{
     width:100%
 }
+*/
+
 input{
     margin:5px
 }
@@ -42,18 +46,19 @@ input[type='submit']:hover{
     justify-content:center;
     flex-direction: row;
 }
-main{
+.activity-box{
     text-align: center;
     background-color: rgb(143, 140, 116);
     border:2px solid rgb(184, 188, 214);
     border-radius: 5%;
-    width: 50%;
     padding:20px;
+    margin:40px;
     font-family: fantasy;
-    height:80%
+    display:none
+   
  
 }
-main div{
+.container div{
    background-color: beige ;
 }
 img{
