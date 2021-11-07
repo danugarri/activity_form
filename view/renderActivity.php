@@ -2,7 +2,7 @@
           
           // muy importante. la variable que recorre el array no puede estar definida previamente debe ser una iventada?>
         <?php foreach($_SESSION["activities"] as $actividades):
-          echo '<script type="text/javascript" src="main.js"></script>';//change display none property
+          echo '<script type="text/javascript" src="main.js"></script>';//change the display none property
           $unserializedActivity= unserialize($actividades);
           
           ?>

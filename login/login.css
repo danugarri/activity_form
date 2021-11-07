@@ -57,18 +57,7 @@ input[type='submit']:hover{
     justify-content:center;
     flex-direction: row;
 }
-.activity-box{
-    text-align: center;
-    background-color: rgb(143, 140, 116);
-    border:2px solid rgb(184, 188, 214);
-    border-radius: 5%;
-    padding:20px;
-    margin:40px;
-    font-family: fantasy;
-    display:none
-   
- 
-}
+
 .container div{
    background-color: beige ;
 }

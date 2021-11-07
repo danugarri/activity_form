@@ -33,7 +33,7 @@
             <label for="date">Fecha</label>
             <input type="date" name="date" /><br/>
             <label for="city" >Ciudad</label>
-            <input type="text" name="city" placeholder="Ciudad" required/><br/>
+            <input type="text" name="city" placeholder="Ciudad" /><br/>
             <label for="type">Tipo</label>
             <select name="type" >
               <option selected >Selecciona el tipo de actividad</option>
