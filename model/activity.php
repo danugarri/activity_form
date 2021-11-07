@@ -8,17 +8,18 @@ class Activity
     public $date;
     public $city;
     public $type;
-   // public $image;
     public $free;
-    //public $access;
+    public $image;
+    
     //constrtuctor method, called __construct(parameters)
-    function __construct($title,$date,$city,$type,$free){
+    function __construct($title,$date,$city,$type,$free,$image){
         //asigning values defined in index.php
         $this->title = $title;
         $this->date = $date;
         $this->city = $city;
         $this->type = $type;
-        $this->free= $free;
+        $this->free = $free;
+        $this->image =$image; 
     }
 }
 

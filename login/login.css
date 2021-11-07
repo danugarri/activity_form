@@ -16,19 +16,7 @@ h1{
 .logout{
     text-decoration: none;
     margin-right: 30px;
-   background-color:gold ;
-   color:black;
-   border:1px solid black;
-   text-align: center;
-   padding: 2px;
-}
-.logout:hover{
-    background-color:rgb(223, 205, 103) ;
    
-}
-.user{
-    margin-right: 10px;
-    color:white
 }
 form{
     text-align: center;
@@ -71,27 +59,28 @@ input[type='submit']:hover{
 }
 .activity-box{
     text-align: center;
+    background-color: rgb(143, 140, 116);
+    border:2px solid rgb(184, 188, 214);
+    border-radius: 5%;
+    padding:20px;
+    margin:40px;
     font-family: fantasy;
     display:none
    
  
 }
-.activity{
-  background-color: rgb(143, 140, 116);
-    border:2px solid rgb(184, 188, 214);
-    border-radius: 5%;
-    padding:20px;
-    margin:40px;
-}
-.acitivity-line{
+.container div{
    background-color: beige ;
 }
 img{
     height:100px;
     width:200px
 }
-/* activities layaout structure: 
-1. activity box
-2. activity
-3. activity-line
-*/
+#error{
+    background-color: white;
+    height: 40px;
+    margin: auto 10px;
+    padding: 5px;
+    border: 2px solid crimson;
+    display:none;
+}

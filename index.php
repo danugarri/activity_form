@@ -1,4 +1,6 @@
-<?php include 'activity.php';?>
+<?php include 'model/activity.php'?>
+<?php include 'controller/session.php'?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,21 +12,21 @@
     <title>Actividad uf1</title>
 </head>
 <body>
+  <header id="header">
+    <span class="user">
+      <?php echo 'Bienvenido ' .$_SESSION["user"] //showing the userName after login?>
+   </span>
+    <a class="logout" href="logout.php">Salir</a>
+  </header>
   <main class="container">
       <section class="activity-box">
-        <?php 
-        //isset() method
-        /*if it finds a method="POST" with the indicated name="crear-actividad"*/
-        if(isset($_POST['crear-actividad']))
-        {
-          //call to the file
-          include 'inputController.php';
-        }
-        ?>
+        <!-- showing the activities -->
+       <?php include 'view/renderActivity.php'; ?>
+       
       </section>
       <!--html form-->
       <section id="form-box">
-        <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]?>">
+        <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>">
             <h1>Actividades</h1>
             <label for="title">T&iacute;tulo</label>
             <input type="text" name="title" placeholder="T&iacute;tulo" required/><br/>
@@ -33,8 +35,6 @@
             <label for="city" >Ciudad</label>
             <input type="text" name="city" placeholder="Ciudad" required/><br/>
             <label for="type">Tipo</label>
-            <!-- El tipo de actividad será un desplegable en el que solo estarán disponibles las siguientes
-            opciones: Cine, Comida, Copas, Cultura, Música y Viajes -->
             <select name="type" >
               <option selected >Selecciona el tipo de actividad</option>
               <option>Cine </option>
